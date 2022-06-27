@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1440px) {
+  .main-section .main-section-title {
+    top: 30vh;
+  }
+  .main-section .main-section-title h1 {
+    font-size: 6rem;
+  }
+  .main-section .main-section-posters h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .main-section .main-section-posters p {
+    font-size: .8rem;
+  }
+  .main-section .main-section-text {
+    width: auto;
+    position: absolute;
+    top: 100vh;
+    left: 2rem;
+    display: flex;
+  }
+  .main-section .main-section-text .text-title h2 {
+    font-size: 1.5rem;
+  }
+  .main-section .main-section-text .text-title p {
+    font-size: .8rem;
+  }
+  .main-section .main-section-text #text-description {
+    font-size: .8rem;
+  }
+  .main-section-works h2 {
+    font-size: 1.8rem;
+  }
+  .main-section-works p {
+    font-size: .8rem;
+  }
+  .main-section-heading h2 {
+    font-size: 4.5;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .site {
+    padding: 100px 0;
+  }
+}
+/*# sourceMappingURL=rwd.css.map */
