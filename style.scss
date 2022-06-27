@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
 
 $bgcolor: #141414;
@@ -6,16 +13,13 @@ $textcolor: #fff;
 *, body, html{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 h1, h2, p {
     pointer-events: none;
 }
-
-// *{
-//     border: 1px solid red;
-// }
 
 .site{
     width: 100%;
@@ -30,9 +34,15 @@ h1, h2, p {
 .site-nav, .footer-nav{
     width: 100%;
     height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 60px;
 
     img{
@@ -43,8 +53,12 @@ h1, h2, p {
     ul{
         width: 25%;
         list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     li{
@@ -53,6 +67,8 @@ h1, h2, p {
         font-weight: 400;
         position: relative;
         opacity: .5;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
         transition: all .3s;
         
         &:hover{
@@ -73,7 +89,9 @@ h1, h2, p {
             position: absolute;
             top: 1.2rem;
             left: 50%;
-            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
         }
     }
 }
@@ -95,8 +113,12 @@ footer{
 .main-section{
     width: 100%;
     height: 130vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
     background: url("../assets/img/hero.jpg");
     background-size: cover;
@@ -106,9 +128,16 @@ footer{
         position: absolute;
         top: 35vh;
         left: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
 
         h1{
             font-size: 8rem;
@@ -128,8 +157,13 @@ footer{
         top: 70vh;
         left: 75%;
         margin-right: 2.5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         
         h2{
             font-size: 2rem;
@@ -146,6 +180,8 @@ footer{
         position: absolute;
         top: 100vh;
         left: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         .text-title{
@@ -171,8 +207,13 @@ footer{
 
 .main-section-works{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 8rem;
 
     h2{
@@ -188,15 +229,23 @@ footer{
     .works-posters{
         max-width: 100%;
         margin-top: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         img{
             width: 25%;
-            filter: saturate(0);
+            -webkit-filter: saturate(0);
+                    filter: saturate(0);
+            -webkit-transition: -webkit-filter .7s;
+            transition: -webkit-filter .7s;
+            -o-transition: filter .7s;
             transition: filter .7s;
+            transition: filter .7s, -webkit-filter .7s;
         }
         img:hover{
-            filter: saturate(1)
+            -webkit-filter: saturate(1);
+                    filter: saturate(1)
         };
     }
 }
@@ -204,6 +253,7 @@ footer{
 .main-section-heading{
     width: 100%;
     height: 100vh;
+    display: -ms-grid;
     display: grid;
     place-items: center;
     
@@ -245,6 +295,8 @@ footer{
             position: absolute;
             top: 100vh;
             left: 2rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
     
             .text-title{
@@ -287,7 +339,9 @@ footer{
     .footer-nav{
         height: 150px;
         ul{
-            order: 1;
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1;
         }
     }
 
@@ -301,13 +355,21 @@ footer{
     .site-nav, .footer-nav{
     
         padding: 10px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
         ul{
             width: 100%;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
         }
     }
 
@@ -336,6 +398,8 @@ footer{
             position: absolute;
             top: 70vh;
             left: 2rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
     
             .text-title{
@@ -365,14 +429,17 @@ footer{
         }
         .works-posters{
             width: 100%;
-            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
             img{
                 width: 50%;
             }
         }
     }
     .main-section-heading{
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         margin-left: 2rem;
         h2{
             font-size: 4rem;
@@ -390,7 +457,9 @@ footer{
         .main-section-title{
             top: 25vh;
             left: 50%;
-            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
             h1{
                 font-size: 3.5rem;
             }
@@ -411,7 +480,10 @@ footer{
         }
 
         .main-section-text{
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
 
             .text-title{
                 h2{
