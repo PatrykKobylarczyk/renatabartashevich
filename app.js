@@ -9,5 +9,5 @@ navList.forEach(el => {
         navList.forEach(item => item.classList.remove("active"))
         el.classList.add("active")
     });
-  });
+});
 
