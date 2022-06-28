@@ -195,14 +195,35 @@ footer {
 
 .main-section-heading {
   width: 100%;
-  height: 100vh;
+  height: 140vh;
   display: grid;
   place-items: center;
+  margin-top: 15rem;
+  padding: 6rem 0;
 }
 
 .main-section-heading h2 {
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: 300;
+}
+
+.main-section-heading .main-contacts {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.main-section-heading .main-contacts li:first-of-type {
+  margin-bottom: 5rem;
+  opacity: .5;
+}
+
+.main-section-heading .main-contacts li {
+  margin: 2rem 0;
+}
+
+.main-section-heading .main-contacts li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -245,7 +266,16 @@ footer {
     font-size: .8rem;
   }
   .main-section-heading h2 {
-    font-size: 4.5;
+    font-size: 4.5rem;
+  }
+  .main-section-heading .main-contacts {
+    font-size: 1.2rem;
+  }
+  .main-section-heading .main-contacts li:first-of-type {
+    margin-bottom: 3rem;
+  }
+  .main-section-heading .main-contacts li {
+    margin: 1.5rem 0;
   }
 }
 
@@ -329,15 +359,20 @@ footer {
     width: 50%;
   }
   .main-section-heading {
+    height: 90vh;
     justify-content: flex-start;
   }
   .main-section-heading h2 {
     font-size: 4rem;
-    margin-left: 2rem;
+    margin-left: 8rem;
   }
 }
 
 @media only screen and (max-width: 576px) {
+  .site-nav img, .footer-nav img {
+    width: 25px;
+    height: 20px;
+  }
   .main-section {
     background: url("../assets/img/mobile-hero.jpg");
     background-size: cover;
@@ -379,8 +414,24 @@ footer {
     margin: 2rem 0;
     font-size: .6rem;
   }
+  .main-section-heading {
+    height: 90vh;
+    margin-top: 4rem;
+  }
   .main-section-heading h2 {
-    font-size: 2rem;
+    max-width: 80%;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+  .main-section-heading .main-contacts {
+    margin-top: 2rem;
+    font-size: .8rem;
+  }
+  .main-section-heading .main-contacts li:first-of-type {
+    margin-bottom: 3rem;
+  }
+  .main-section-heading .main-contacts li {
+    margin: 1.5rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
