@@ -37,13 +37,13 @@ h1, h2, p {
         width: 100%;
         height: auto;
         object-fit: contain;
-        filter: saturate(0);
-        transition: filter .7s;
+        // filter: saturate(0);
+        // transition: filter .7s;
     }
 
-    img:hover{
-        filter: saturate(1);
-    }
+    // img:hover{
+    //     filter: saturate(1);
+    // }
 
     .item-1{
         width: 100%;
