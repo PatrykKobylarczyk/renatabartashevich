@@ -1,2 +1,129 @@
 @import '_variables';
+@import '_headerfooter';
+@import '_site';
 
+.site-contact{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contacts{
+
+    h1{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 5rem;
+        letter-spacing: 2px;
+    }
+
+    .container-contacts{
+        display: flex;
+
+        h2{
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-top: 8rem;
+        }
+
+        ul{
+            list-style: none;
+            margin-top: 4rem;
+
+            li{
+                margin-top: 1.6rem;
+            }
+
+            a{
+                font-weight: 300;
+                text-decoration: none;
+                letter-spacing: 2px;
+                color: $textcolor;
+            }
+        }
+        .contacts-socials{
+            margin-left: 10%;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 1440px){
+    .contacts{
+        h1{
+            font-size: 1.4rem;
+            margin-top: 3rem;
+        }
+
+        .container-contacts{
+            h2{
+                font-size: 1.1rem;
+                margin-top: 4rem;
+            }
+
+            ul{
+                margin-top: 2.5rem;
+
+                li{
+                    margin-top: 1rem;
+                }
+
+                a{
+                    font-size: .8rem;
+                }
+            }
+            .contacts-socials{
+                margin-left: 15%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .contacts{
+        display: grid;
+        place-items: center;
+
+        h1{
+            font-size: 3rem;
+        }
+        .container-contacts{
+            flex-direction: column;
+            .contacts-generals, .contacts-socials{
+                h2{
+                    font-size: 2rem;
+                }
+
+                a{
+                    font-size: 1.3rem;
+                }
+            }
+
+            .contacts-socials{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .contacts{
+        h1{
+            font-size: 1.5rem;
+        }
+        .container-contacts{
+            .contacts-generals, .contacts-socials{
+               
+                h2{
+                    font-size: 1rem;
+                    margin-top: 2rem;
+                }
+
+                a{
+                    margin-top: 1.5rem;
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}
