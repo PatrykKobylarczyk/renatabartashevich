@@ -138,11 +138,15 @@ h1, h2, p {
 }
 
 @media only screen and (max-width: 576px){
+    .main-section-heading{
+        margin-top: 1rem;
+    }
     .portfolio-posters{
-        height: 550vh;
+        height: auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, 1fr);
+        gap: 0;
         img{
             width: 100%;
             height: auto;
